@@ -1,0 +1,264 @@
+html {font-family: "Anton", "Arial", sans-serif;}
+html {margin: 0px auto; padding: 0px auto;}
+div {display: inline-block;}
+img {z-index: 999}
+
+/* Шапка */ 
+
+.bg_color {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: #0e5330;
+  z-index: 10;
+}
+
+/*Ругелирование отображения, дисплея элементов*/
+
+.main_header {
+ display: flex;
+ justify-content: space-between;
+}
+
+/*Настройка ЛогоТипа*/
+
+.header_logo {
+  width: 15%;
+  text-align: end;
+  font-size: 50px;
+  font-style: oblique;
+  color: #ff0000;
+}
+
+.header_logo a {
+  color: #1bff00;
+  text-decoration: none;
+}
+
+/*Найстройка правой части функционала (ссылки, всплывающие данные и прочие функции...)*/
+
+.header_elements_control div {
+  display: inline-flex;
+  margin: 10px;
+  justify-content: space-around;
+  font-size: 30px;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+
+.header_elements_control a {
+  text-decoration: none;
+  color: #effff4;
+}
+
+.header_elements_control a:hover {
+/*background: #cccccc50;*/
+  text-decoration: underline;
+}
+
+/* ФОН */
+
+body {background: #152f33;}
+
+/* Управление Вкладок на Шапке */
+
+.header_elements_control {
+  display: inline-flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+/* Блокирующий фон */
+
+.webBlock {
+  position: absolute;
+}
+
+/* Контет информации - Инфо */
+
+.cross img{
+  position: fixed;
+  top: 60px;
+  left: 1278px;
+  z-index: 999;
+}
+
+
+/* Зона игры */
+
+.areaGame {
+  position: relative;
+  top: -1px;
+  left: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  max-height: 600px;
+  height: 355px;
+  width: 800px;
+  margin: 0 auto;
+  background: repeating-radial-gradient(#1bff00a8, #0f5330 100px);
+  border: 5px solid #02FE82;
+  color: #fff;
+  box-shadow: 0px 0px 40px 20px #00ffdc;
+  text-align: center;
+}
+
+/* Шапка Игры */
+
+.topGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+  font-size: 40px;
+}
+
+.winningBetween {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+/* Надпись Выигрыша/Проигрыша */
+
+.titleOver {
+  color: #fff;
+  font-size: 29px;
+  text-shadow: 0 0 5px black;
+  border-bottom: 5px solid #02FE82;
+  width: 100.2%;
+  background: repeating-linear-gradient(135deg, #1bf901, #0f5330 104px);
+}
+
+/* Результат игры */
+
+.probablyResult {
+  text-shadow: 0 0 5px black;
+}
+
+/* Выигрыш */
+
+.winning {
+  visibility: hidden;
+  text-shadow: 0 0 5px black;
+}
+
+.winningSum {
+  text-shadow: 0 0 5px black;
+}
+
+/* Функционал игры (Нижняя часть) */
+
+.downGame {
+  position: relative;
+  left: -1px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px solid #02FE82;
+  width: 100.2%;
+  text-shadow: 0 0 5px black;
+  background: repeating-linear-gradient(135deg, #1bf901, #0f5330 100px);
+}
+
+/* Времннной таймер */
+
+.timeCount {
+  position: relative;
+  top: 5px;
+  color: #fff;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.functionGame {
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 350px;
+  max-height: 32px;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+/* Надпись "Ставка:" */
+
+.betTitle {
+  color: #fff700;
+  background: #152f33;
+  border-radius: 5px;
+  position: relative;
+  top: -0.5px;
+  height: 33px
+}
+
+/* Поле ставки */
+
+.putBet {
+  position: relative;
+  top: -2px;
+  border: 5px solid #10ddc0;
+  background: #152f33;
+  color: #fff;
+  font-size: 15px;
+  font-style: oblique;
+  font-family: "Anton", "Arial", sans-serif;
+  height: 21px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.putBet::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Выбор коэффециента */
+
+.numbersX {
+  position: relative;
+  top: -0.5px;
+  border-radius: 5px;
+  border: 5px solid #10ddc0;
+  background: #152f33;
+  color: #fff;
+  font-size: 15px;
+  font-style: oblique;
+  font-family: "Anton", "Arial", sans-serif;
+  height: 33px;
+  width: 80px;
+}
+
+/* Поле Старта */
+
+.startBtn {
+  display: inline-flex;
+  position: relative;
+  top: -0.5px;
+  height: 33px;
+  width: auto;
+  border-radius: 5px;
+  border: 5px solid #10ddc0;
+  background: #152f33;
+  color: #fff700;
+  cursor: pointer;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Отображение счётчика игры */
+
+.titleSessions {
+  position: relative;
+  top: 5px;
+  color: #fff;
+  font-style: oblique;
+}

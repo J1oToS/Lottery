@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lottery</title>
+</head>
+<body>
+
+  <!-- Шапка -->
+
+  <header>
+    <div class="bg_color">
+      <div class="main_header">
+        <div class="header_logo"> 
+          Лотерея
+        </div>
+        <div class="header_elements_control">
+          <div class="titleBalance">
+            Баланс:
+          </div>
+          <div class="balance">
+            100<!-- Значение динамически меняется JavaScript-кодом -->
+          </div>
+          <div class="score">
+            очков
+          </div>
+        </div>
+      </div>
+    </div>          
+  </header>
+
+  <br><br><br><br><br><br>
+
+  <!-- Зона игры -->
+
+        <div class="areaGame">
+          <div class="topGame">
+            <div class="titleOver">
+              Начните игру.
+            </div>
+            <div class="winningBetween">
+              <div class="probablyResult">
+                <!-- Значение динамически меняется JavaScript-кодом -->
+              </div>
+              <div class="winning">
+                <!-- Значение динамически меняется JavaScript-кодом -->Выигрыш: <div class="winningSum"></div>
+              </div>
+            </div>
+          </div>
+          <div class="downGame">
+            <!-- Таймер - Время на странице -->
+            <div class="timeCount"><!-- Значение динамически меняется JavaScript-кодом --></div>
+            <div class="functionGame">
+              <div class="betTitle">
+                Cтавка:
+              </div>
+              <div class="areaBet">
+                <input type="number" min="10" step="10" class="putBet">
+              </div> <!-- Поле "value" вводиться вручную пользователем-->
+                <input type="button" class="startBtn" name="Start" form="formBet" value="Старт">
+                <select class="numbersX" name="list" value="Выбор X">
+                  <option style="background: #000; color: #fff;" disabled>Выбор X</option>
+                  <option style="background: #000; color: #4072ff;">X2</option>
+                  <option style="background: #000; color: #fff700;">X3</option>
+                  <option style="background: #000; color: #ff4f48;">X5</option>
+                  <option style="background: #000; color: #33ff00;">X10</option>
+                  <option style="background: #000; color: #00ffad;">X50</option>
+                  <option style="background: #000; color: #fb37ff;">X100</option>
+                  <option style="background: #000; color: #8040ff;">X1000</option>
+                </select>
+            </div>
+            <div class="titleSessions">
+              игра #<div class="counterSessions">0</div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Подключение стилей, скриптов... -->
+  
+   <link rel="stylesheet" href="./style.css">
+   <script src="./app.js"></script>
+</body>
+</html>
